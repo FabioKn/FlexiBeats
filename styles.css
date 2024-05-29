@@ -1,0 +1,74 @@
+body {
+    background-color: #f3e5f5; /* Leicht pastellfarbenes Lila */
+    color: black;
+    font-family: 'B612 Mono', monospace;
+}
+
+header {
+    background-color: #f3e5f5;
+    width: 100%;
+    padding: 20px;
+}
+.logo img {
+    height: 10%; 
+    width: auto;
+}
+nav a {
+    color: black;
+    margin: 0 10px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+    height: calc(100vh - 160px); 
+}
+.top-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.instruction-text {
+    margin-left: 20px;
+    max-width: 600px;
+}
+.drag-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.draggable.large-headphones {
+    width: 300px; 
+    height: auto; 
+    cursor: grab;
+}
+.dropzones {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    height: 33%; 
+}
+.dropzone {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #a8f9a8;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    overflow: hidden; 
+}
+.dropzone-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+h1{
+    font-family: 'League Gothic', sans-serif;
+    text-transform: uppercase;
+}

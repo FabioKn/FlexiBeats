@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexiBeats</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono&family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3">
+        <div class="logo">
+            <img src="Bilder und Entwuerfe/logoges.png" alt="FlexiBeats Logo" style="width: 150px;">
+        </div>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="products.html">Products</a> |
+            <a href="about.html">About us</a>
+        </nav>
+    </header>
+    <main class="d-flex flex-column align-items-center">
+        <div class="top-section d-flex align-items-center justify-content-center">
+            <div class="drag-area">
+                <img id="headphones" class="draggable large-headphones" src="Bilder und Entwuerfe/headphones.png" alt="Headphones" draggable="true">
+            </div>
+            <div class="instruction-text">
+                <h1>Flexibeats</h1>
+                <p>FlexiBeats bieten dir volle Klangleistung in allen Sound-Bereichen. Zieh die Kopfhörer auf die verschiedenen Boxen und erlebe den Unterschied.</p>
+            </div>
+        </div>
+        <div class="dropzones d-flex justify-content-around">
+            <div class="dropzone" data-sound="Musik/orchester.mp3">
+                <img src="Bilder und Entwuerfe/orchester.png" alt="Honor and Sword Musik von Zakhar Valaha" class="dropzone-img">
+            </div>
+            <div class="dropzone" data-sound="Musik/rock.mp3">
+                <img src="Bilder und Entwuerfe/rock.png" alt="Hard Rock (Fireman) von Alex Grahl" class="dropzone-img">
+            </div>
+            <div class="dropzone" data-sound="Musik/wald.mp3">
+                <img src="Bilder und Entwuerfe/natur.png" alt="Bird's Forest von ShidenBeatsMusic" class="dropzone-img">
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
